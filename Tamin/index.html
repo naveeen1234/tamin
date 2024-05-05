@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<!-- Coding by CodingNepal || www.codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tamin</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../custom-scripts.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <!-- Header Start -->
+      <header>
+        <nav class="nav ">
+          <h2 class="nav_logo"><a href="#">Tamin</a></h2>
+          <div class="social">
+            <a href="#" id="you"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" id="face"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" id="twit"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+
+          <ul class="menu_items">
+            <img src="images/times.svg" alt="timesicon" id="menu_toggle" />
+            <li><a href="#" class="nav_link">Home</a></li>
+            <li><a class="nav_link" href="#">About us<i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="submenu-why">
+                    <li><a href="#">Why TAMIN</a></li>
+                </ul>
+            </li>
+            <li><a class="nav_link" href="#">Products<i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="submenu">
+                    <li><a href="#">Granite Raw Blocks-Black & Color</a></li>
+                    <li><a href="#">Granite Finished Products</a></li>
+                    <li><a href="#">Graphite</a></li>
+                    <li><a href="#">Lime Stone</a></li>
+                    <li><a href="#">Indian Standard Sand</a></li>
+                    <li><a href="#">Vermiculite</a></li>
+                    <li><a href="#">Quartz</a></li>
+                    <li><a href="#">Fireclay & Laterite</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="nav_link">Contact</a></li>
+          </ul>
+          <img src="images/bars.svg" alt="timesicon" id="menu_toggle" />
+        </nav>
+      </header>
+      <!-- Header End -->
+
+      <!-- Hero Start -->
+      <section class="hero">
+        <div class="row container">
+          <div class="column">
+            <h2>Tamil Nadu Minerals Ltd</h2>
+            <p>Tamil Nadu Minerals Ltd (TAMIN), a Government of Tamil Nadu undertaking, was started in 1978, engaged in exploration mining, exploitation, processing and marketing of Granite and other minerals like Graphite, Limestone, Indian Standard Sand and vermiculite.</p>
+            <div class="buttons">
+              <button class="btn">Read More</button>
+              <button class="btn">Contact Us</button>
+            </div>
+          </div>
+          <div class="column">
+            <img src="assets/bgimage.jpeg" alt="miningImg" class="hero_img" />
+          </div>
+        </div>
+        <img src="images/bg-bottom-hero.png" alt="" class="curveImg" />
+      </section>
+      <!-- Hero End-->
+
+      <br>
+      <br>
+      <div class="base">
+        <div class="base1">
+            <div class="About">
+                <div class="leftabout">
+                    <h2><u>Abouts us</u></h2>
+                    <p>TAMIN – a Government of Tamil Nadu Undertaking was started in 1978 to manage the exploration, mining, processing and marketing of the minerals base in the State.
+                        With a clear mandate to extract high-quality stones with a special focus on granite blocks, TAMIN quarries have been in operation for 45 years now, thus making a significant contribution towards granite production and export.
+                        With 62 own granite quarries spread across the southern State of Tamil Nadu in India, TAMIN also owns a state of the art granite processing unit.
+                        Other than granite TAMIN also owns and operates:
+                    </p>
+                </div>
+                <div class="rightabout">
+                    <div class="righttop">
+                        <div class="slideshow-container">
+    
+                            <div class="mySlides fade">
+                                <p><strong> Graphite Mine and a Graphite Flakes Processing & Beneficiation Unit at Sivagangai which produces 30% of India’s Graphite production.</strong></p>
+                                <img src="https://file2.okorder.com/prodalbum/2016/05/25/24a9595237ba7e601ba63f5213021f53.jpg" width="100%">
+                            </div>
+                            
+                            <div class="mySlides fade">
+                                <p><strong> Silica Sand processing Unit at Ennore, Chennai which is the only authorised unit by BIS to produce Standard Sand for quality testing by all cement factories across India.</strong></p>
+                                <img src="https://www.mgs.co.uk/wp-content/uploads/2018/10/Silica-Sand-1.jpg" width="100%">
+                            </div>
+                            
+                            <div class="mySlides fade">
+                                <p><strong>Exfoliation of Vermiculite at Sevathur, Thirupathur District</strong></p>
+                                <img src="https://5.imimg.com/data5/VN/PW/MY-29851381/exfoliated-vermiculite-500x500.jpg" width="100%">
+                            </div>
+                            
+                            <a class="prev" onclick="plusSlides(-1)">❮</a>
+                            <a class="next" onclick="plusSlides(1)">❯</a>
+                            
+                        </div>
+                            <script>
+                                let slideIndex = 1;
+                                showSlides(slideIndex);
+                                
+                                function plusSlides(n) {
+                                showSlides(slideIndex += n);
+                                }
+                                
+                                function currentSlide(n) {
+                                showSlides(slideIndex = n);
+                                }
+                                
+                                function showSlides(n) {
+                                let i;
+                                let slides = document.getElementsByClassName("mySlides");
+                                let dots = document.getElementsByClassName("dot");
+                                if (n > slides.length) {slideIndex = 1}    
+                                if (n < 1) {slideIndex = slides.length}
+                                for (i = 0; i < slides.length; i++) {
+                                    slides[i].style.display = "none";  
+                                }
+                                for (i = 0; i < dots.length; i++) {
+                                    dots[i].className = dots[i].className.replace(" active", "");
+                                }
+                                slides[slideIndex-1].style.display = "block";  
+                                dots[slideIndex-1].className += " active";
+                                }
+                                </script>
+                    </div>
+                    <div class="rightdown">
+                        <p>
+                            <strong> product range includes</strong> – Granite Raw Blocks, Slabs, Tiles, Monuments, Graphite, Limestone, Indian Standard Sand, Vermiculite, Quartz, Fireclay and Laterite.
+                            A State known for its legacy in granite, TAMIN entered the export market in 1979 with dimensional blocks, slabs, and other coloured granite forms. The Dimensional Granite Blocks from TAMIN has an impressive customer base in Europe, Middle East, Japan, and China. Parallelly, a sizeable market exists for various finished and semi-finished granite products like Dimensional, calibrated Tiles, Random Building slabs, wall panels, and monuments in Australia, the United Kingdom, Switzerland, Holland, the USA, and Germany.
+                            TAMIN believes in sustainable mining, is known for ethical practices and adheres to global industry standards in quarrying techniques with blasting kept to an absolute minimum.
+                            Owning responsibility for sustained economic performance, environmental and social stewardship, the CST interventions at TAMIN focus on enhancing the quality of life of the communities and generating sustainable livelihoods.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            
+            <div class="wt">
+                
+                <h2><u>Why TAMIN</u></h2>
+                <p>
+                    •	TAMIN believes in sustainable mining, is known for ethical practices and adheres to global industry standards in quarrying techniques with blasting kept to an absolute minimum.<br>
+                    •	Owning responsibility for sustained economic performance and social stewardship, the CSR interventions at TAMIN focus on enhancing the quality of life of the communities and generating sustainable livelihoods.<br>
+                    •	Keeping go-green approach in mind, TAMIN is rapidly moving towards renewable energy sources such as Solar Energy for Power generation in Factories instead of relying on conventional diesel powered machines.<br>
+                    •	TAMIN’s pride Black, Colombo Jubrana, Paradiso, Redwave and Fox Brown dimensional blocks with unique color and pattern are highly demanded in Italian and German Markets and Local Buyers.<br>
+                    •	The Dimensional Granite Blocks from TAMIN has an impressive customer base in Europe, Middle East, Japan, and China. Parallelly, a sizeable market exists for various finished and semi-finished granite products like Dimensional, Calibrated Tiles, Random Building Slabs, Wall Panels, and Monuments in Australia, the United Kingdom, Switzerland, Holland, the USA, and Germany and some prominent 100% E.O.U granite processors in India.<br>
+                    •	TAMIN’s plants are set with latest state of the art machineries to allow lower cost of production, Quality product and wider product mix with different finishes.<br>
+                    •	TAMIN has own quarries of all the colours which enable to supply the finished products consistently over the years.
+                    •	TAMIN is the only company authorized by BIS supplying Indian standard sand.
+    
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="base2">
+            <div class="product">
+                <h2>
+                    <u>Products:
+                    </u>
+                                </h2>
+                <div class="blocks">
+                    <h3>1.Granite Raw Blocks – Black & Colour:</h3>
+                    <img src="assets/Black_granite.jpg" height="210" width="250">
+                    <p>TAMIN has got substantial quarrying rights of granite in Tamil Nadu. The granite deposits are rich in black and colour varieties and are among the best in the World. TAMIN’s pride and buyers’ choices are Black, Colombo Jubrana, Paradiso and Redwave dimensional blocks. Paradiso material (introduced by TAMIN), is unique in colour and pattern and is exported in large quantity to Italian and German markets. Apart from this, TAMIN has other colour material like Hawks Eye, Dekotta, Black Wonder, Fox Brown, Black Forest, which are widely welcomed by International and Local Buyers.</p>
+                </div>
+
+                <br>
+                <br>
+                <div class="finish">
+                    <h3>2.Granite Finished Products:</h3>
+                    <div class="sidey">
+                    <p>TAMIN has set up a new 100% export oriented granite slab processing unit at Melur, Madurai District. The installed capacity of the plant is 1,80,000 square meters / annum in terms of 2 cm / 3 cm thick granite slabs. This plant has been set up with a latest state- of –the- art machineries to allow lower cost of production, wider product mix with different finishes like sawn, polished slabs, leather finished slabs and also production of cut to size materials for project orders. This plant is equipped with 3 Jumbo gang saws, 2 wire saws, 1 line polishing machine, resin plant and edge cutting machines which all are imported. This slab unit involves creation of modern processing facility designed with a rational process flow from the receipt of raw block and consumable to the despatch of finished goods. At present TAMIN is processing 2 & 3cm building slabs of various black and coloured materials such as Colombo Jubrana, Red wave, Paradiso and also processing new colour varieties such as Fox brown, Hawks eye etc. Major production is 70% of coloured granite material and 30% of black granite materials.</p>
+                    <img src="assets/granite_finished_product.jpg" height="250px" width="250">
+                </div>
+                </div>
+                <br>
+                <br>
+
+                <div class="graphite">
+                    <h3>3.Graphite:</h3>
+                    <img src="assets/g3.jpg" height="250px" width="250">
+                    <p>The Sivaganga graphite is of flaky nature with 14% average fixed carbon content. TAMIN has over 600 acres (243 Hects) of graphite bearing land in Pudupatti, Kumaripatti and Senthiudayanathapuram villages of Sivaganga taluk, Sivagangai District, Tamil Nadu. The estimated reserve of graphite ore in leasehold area is three million tonnes.
+                        The Sivaganga graphite plant was established during December 1994 near the mine at Senthi Udayanathapuram Village, Sivaganga District, Tamil Nadu at the project cost of Rs.28 crores. Plant process capacity is 200 tonnes ore per day and production capacity is 20 tonnes on average of beneficiated graphite up to 96% FC per day.
+                        Applications:
+                        Graphite finds application in the manufacture of Magnesia - carbon refractory bricks for lining furnaces. Graphite crucibles for melting non-ferrous metals. Carbon brushes, Paints, Lubricants, Graphite brake lining and clutches for automobiles, Pencils etc. are produced from TAMIN Flaky graphite.
+                        Technical Details of Flaky graphite:Moisture Content - 0.5% (Max)
+                    </p>
+                </div>
+            </div>
+            <div class="table">
+    
+                <table>
+                    <tr>
+                        <th>SPECIFICATION</th>
+                        <th>GRAPHITE FLAKES FIXED CARBON GRADE</th>
+                    </tr>
+                    <tr>
+                        <td>Upto 84%</td>
+                        <td>85–87%</td>
+                        <td>88 - 89%</td>
+                        <td>90%</td>
+                        <td>91%</td>
+                        <td>92%</td>
+                        <td>93%</td>
+                        <td>94%</td>
+                        <td>95%</td>
+                        <td>96%</td>
+                    </tr>
+                    <tr>
+                        <td>Volatile Matter (V.M) (Max.)</td>
+                        <td>4.5</td>
+                        <td>4.0</td>
+                        <td>3.5</td>
+                        <td>3.0</td>
+                        <td>3.0</td>
+                        <td>2.5</td>
+                        <td>2.5</td>
+                        <td>2.0</td>
+                        <td>2.0</td>
+                        <td>2.0</td>
+                    </tr>
+                    <tr>
+                        <td>Ash Content (ASH) (Max.)</td>
+                        <td>12.0</td>
+                        <td>10.5</td>
+                        <td>8.5</td>
+                        <td>7.5</td>
+                        <td>6.5</td>
+                        <td>6.5</td>
+                        <td>5.5</td>
+                        <td>4.5</td>
+                        <td>3.5</td>
+                        <td>3.0</td>
+                    </tr>
+                    <tr>
+                        <td>V.M. + ASH (Max.)</td>
+                        <td>15.5</td>
+                        <td>14.5</td>
+                        <td>11.5</td>
+                        <td>9.5</td>
+                        <td>8.5</td>
+                        <td>7.5</td>
+                        <td>6.5</td>
+                        <td>5.5</td>
+                        <td>4.5</td>
+                        <td>3.5</td>
+                    </tr>
+                </table>
+    
+                <h3>TYPICAL SIZE ANALYSIS OF ASSORTED FLAKY GRAPHITE (APPROX).</h3>
+    
+                <table>
+                    <tr>
+                        <th>MESH (BSS)</th>
+                        <th>WEIGHT PERCENT FLAKES</th>
+                    </tr>
+                    <tr>
+                        <td>+72</td>
+                        <td>20 - 45</td>
+                    </tr>
+                    <tr>
+                        <td>-72 + 150</td>
+                        <td>35 - 45</td>
+                    </tr> 
+                    <tr>
+                        <td>-150 + 200</td>
+                        <td>5 - 15</td>
+                    </tr> 
+                    <tr>
+                        <td>-200</td>
+                        <td>15 - 30</td>
+                    </tr>     
+                </table>
+                <p>Higher the F.C. content, the Flake size distribution would be on the finer side.</p>
+                <h3>TYPICAL SIZE ANALYSIS OF DUST EXTRACT (D.E) FINES GRAPHITE (APPROX.)</h3>
+                <table>
+                    <tr>
+                        <th>MESH (BSS)</th>
+                        <th>WEIGHT PERCENT D.E.FINES</th>
+                    </tr>
+                    <tr>
+                        <td>-52 + 200</td>
+                        <td>30 - 40</td>
+                    </tr>
+                    <tr>
+                        <td>-200</td>
+                        <td>60-70</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    
+        <div class="base3">
+            <h3>4.Lime Stone</h3>
+            <img src="assets/l2.jpg" height="250px" width="250">
+            <p>Limestone is a sedimentary rock composed largely of the minerals calcite and aragonite, which are different crystal forms of calcium carbonate. Most limestone is composed of skeletal fragments of marine organisms such as coral or foraminifera. Limestone is a raw material for cement. TAMIN’s Periyanagalur mine is located in Ariyalur District and its total extent is 12.74.5 Hectares. The mine can produce 1500 tonnes ore per day.</p><br>
+            
+        </div>
+    </div>
+    
+    <div class="ground">
+        <h3>5.Indian Standard Sand</h3>
+    
+        <p>TAMIN is the only company supplying Indian Standard Sand IS650:1991 as per B.I.S. approval to various cement factories, research laboratories etc. for testing the quality of cement. The factory is situated at Ennore 15, km. North of Chennai. The processed sand is marketed in three grades (Grade I, Grade II & Grade III)</p>
+        <img src="assets/i3.jpg" height="500" width="500">
+    
+    
+    
+        <h3>6.Vermiculite</h3>
+    
+        <p>Vermiculite is a hydrated lamellar mica group of minerals, when heated to a high degree of temperature exfoliates and expands 8 to 14 times in volume and yields Exfoliated Vermiculite by loss of water molecules.</p>
+        <img src="assets/vermiculite.jpg" height="500" width="500">
+        <div class="cc">
+        <h3>Chemical Composition:</h3>
+    <table>
+        <tr>
+            <td>Average Moisture</td>
+            <td>7.86%</td>
+        </tr>
+        <tr>
+            <td>Loss on Ignition</td>
+            <td>11.5%</td>
+        </tr>
+        <tr>
+            <td>SiO2</td>
+            <td>30.52%</td>
+        </tr>
+        <tr>
+            <td>Fe2O3</td>
+            <td>16.32%</td>
+        </tr>
+        <tr>
+            <td>TiO2</td>
+            <td>2.63%</td>
+        </tr>
+        <tr>
+            <td>Al2O3</td>
+            <td>14.74%</td>
+        </tr>
+        <tr>
+            <td>CaO</td>
+            <td>9.47%</td>
+        </tr>
+        <tr>
+            <td>MgO</td>
+            <td>3.68%</td>
+        </tr>
+        <tr>
+            <td>Alkalies</td>
+            <td>3.68%</td>
+        </tr>
+    </table>
+    
+        <h3>Physical Characteristics:</h3>
+        <p>The bulk density of Exfoliated Vermiculite is 172 Kg/M3 for size from 6mm to 12mm and 225 Kg/M3 for size below 1mm. The colour of Raw Vermiculite is light to dark brownish yellow, greenish or almost black. When heated, the colour changes to lustrous gold/golden brown with a silver (or) bronze tint.</p>
+        <h3>Unique features of Exfoliated Vermiculite</h3>
+    <ul>
+        <li>Feather Light</li>
+        <li>Low Thermal conductivity</li>
+        <li>Non-conductivity of electricity</li>
+        <li>Fire resistant</li>
+        <li>Echo Proof (Acoustical insulation)</li>
+        <li>Termite resistant</li>
+        <li>Optimum compatibility with cement</li>
+    </ul>
+    
+        <h3>Uses of Exfoliated Vermiculite</h3>
+        <p>In Building Activities (Grade I, II & III)</p>
+    <ul>
+        <li>Recommended as best thermal insulator and an ideal substitute than any other weathering course material</li>
+        <li>Cold face insulator as insulation bricks in furnaces</li>
+        <li>Plaster aggregates as fire proof material in structures</li>
+        <li>Water leakage arrestor</li>
+        <li>Insulation fill for homes
+            <ul>
+                <li>Advantages:
+                    <ul>
+                        <li>Low electricity cost</li>
+                        <li>Less load on structures</li>
+                        <li>Cost effective</li>
+                        <li>Fuel conservation</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+        <h4>In Horticultural / Agricultural Activities (Grade IV)</h4>
+    <ul>
+        <li>Booster to soil health</li>
+        <li>Light weight compound for terrace gardens</li>
+            <ul>
+                <li><h3>Advantages:</h3></li>
+                <li>Requires less watering</li>
+                <li>Retains moisture and nutrients</li>
+                <li>Improves soil aeration</li>
+                <li>Needs no additional feeding</li>
+                <li>Eliminates damping off</li>
+                <li>Improves drought tolerance</li>
+                <li>Helps in faster seed germinations</li>
+                <li>Facilitates soil conditioning</li>
+            </ul>
+    </ul>
+        <h4>In Bio-Technological Activities (Grade V)</h4>
+    <ul>
+        <li>Carrier material of microbial inoculation for seed treatment</li>
+        <li>Medium for tissue culture</li>
+            <ul>
+                <li><h3>Advantages:</h3></li>
+                <li>Reduces usage of chemical fertilizers</li>
+                <li>Reduces bulk density in soil</li>
+                <li>Increases hydraulic conductivity in soil</li>
+                <li>Increases porosity in soil</li>
+                <li>Maximum yield</li>
+                <li>Healthier crops</li>
+                <li>More revenue</li>
+            </ul>
+    </ul>
+        <h3>NEW APPLICATIONS</h3>
+    <ul>
+        <li>Compressed false ceiling sheets for roof insulation</li>
+        <li>Clay mineral barrier in canal lining to eliminate seepage loss</li>
+        <li>Polluted waste water remediation (Dye effluent / tannery effluent treatments)</li>
+        <li>Waste land developments enriching with nutrient</li>
+    </ul>
+    
+        <p>TAMIN does mining and processing Vermiculite, a non-metalic versatile mineral at Sevathur Village, Thirupathur Taluk, Vellore District to suit various needs in building, Horti-Agricultural and Bio-technological activities.</p>
+    </div>
+        <h3>7.Quartz</h3>
+        <p>Quartz is a mineral, which is a member of silica groups. It is present in silica rich-igneous rocks and it is the basic materials of sandstone and is found in metamorphic rock lime gneisses, schists, charnockites and khondalites. TAMIN exploits good quality quartz. It is used in refractive Industries, Ceramic Industries, Glass Industry, Electronic Industry, Ferro Silican Materials, Non-Electric Conductivity, Insulators. Boiler Inner Coating, Grinding Stone, Emery Sheet and as Decorative Stone.</p>
+        <h4>Technical specification</h4>
+        <img src="assets/q2.jpg" height="500" width="500">
+        <p>TAMIN’s quartz mine is located at Punganthurai village, Tirupur District</p>
+    
+        <h3>8.Fireclay & Laterite</h3>
+        <h4>Fireclay:</h4>
+        <img src="assets/Fireclay.jpg" height="500" width="500">
+        <p>Fireclay is a refractory material made from natural argillaceous materials, primarily kaolinite group clays. It also contains fine-grained micas and quartz, and may also contain organic matter and sulfur compounds. It is  used in the manufacture of ceramics, especially fire brick.</p>
+        
+        <h4>Laterite:</h4>
+        <img src="assets/Laterite.jpg" height="500" width="500">
+        <p>Laterite is a red, porous, concretionary clay which is found as mantle over bed rocks. Laterite is mainly composed of alumina and iron-oxide. It is a residual product of weathering in the hot humid climate.</p>
+    
+        <p>TAMIN’s fireclay & laterite mine is located at Thalampattu village, Cuddalore District</p>
+    </div>
+    <footer>
+        <div class="footer-section about">
+          <h3><a href="">About Us</a></h3>
+        </div>
+        <div class="footer-section contact">
+          <h3><a href="">Contact Us</a></h3>
+          <p>Email: info@example.com</p>
+          <p>Phone: +1234567890</p>
+        </div>
+        <div class="footer-section links">
+          <h3> Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      const header = document.querySelector("header");
+      const menuToggler = document.querySelectorAll("#menu_toggle");
+
+      menuToggler.forEach(toggler => {
+        toggler.addEventListener("click", () => header.classList.toggle("showMenu"));
+      });
+    </script>
+  </body>
+</html>
